@@ -1,0 +1,51 @@
+{
+	"name": "JRCMonoBook",
+	"author": [
+		"Gabriel Wicke",
+		"Li Jia Li",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:MonoBook",
+	"descriptionmsg": "jrcmonobook-desc",
+	"namemsg": "skinname-jrcmonobook",
+	"license-name": "GPL-2.0+",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
+	"ValidSkinNames": {
+		"jrcmonobook": "JRCMonoBook"
+	},
+	"SkinOOUIThemes": {
+		"jrcmonobook": "Apex"
+	},
+	"MessagesDirs": {
+		"JRCMonoBook": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.jrcmonobook.styles": {
+			"position": "top",
+			"styles": {
+				"main.css": {
+					"media": "screen"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "JRCMonoBook"
+	},
+	"ResourceModuleSkinStyles": {
+		"jrcmonobook": {
+			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less"
+		}
+	},
+	"AutoloadClasses": {
+		"SkinJRCMonoBook": "SkinJRCMonoBook.php",
+		"JRCMonoBookTemplate": "JRCMonoBookTemplate.php"
+	},
+	"manifest_version": 1
+}
