@@ -49,7 +49,8 @@ div#column-one {
 body {
 	font: x-small sans-serif;
 	/* @embed */
-	background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;
+	//background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;
+	background: #19a1a5;
 	color: black;
 	margin: 0;
 	padding: 0;
@@ -178,6 +179,7 @@ table.rimage {
 	font-size: 91%;
 	font-weight: normal;
 	white-space: nowrap;
+	color: #fff;
 }
 
 .pBody {
@@ -232,6 +234,9 @@ table.rimage {
 	background-repeat: no-repeat;
 	background-position: 35% 50% !important;
 	text-decoration: none;
+	border-radius: 99px;
+	background-color: #fff;
+	background-size: contain;
 }
 
 /*
@@ -327,7 +332,7 @@ input.searchButton {
 	border: none;
 	padding: 0;
 	display: inline;
-	color: #2f6fab;
+	color: #fff;
 	margin-left: 1em;
 	line-height: 1.2em;
 	background: none;
@@ -335,13 +340,13 @@ input.searchButton {
 
 #p-personal li a {
 	text-decoration: none;
-	color: #005896;
+	color: #fff;
 	padding-bottom: .2em;
 }
 
 #p-personal li a:hover {
-	background-color: white;
 	text-decoration: none;
+	color: #2f6fab;
 }
 
 #p-personal li.active a:hover {
@@ -504,9 +509,7 @@ li#ca-print {
 ** footer
 */
 div#footer {
-	background-color: white;
-	border-top: 1px solid #fabd23;
-	border-bottom: 1px solid #fabd23;
+	background-color: #116fc9;
 	margin: .6em 0 1em 0;
 	overflow: hidden;
 	padding: .4em 0 .3em 0;
@@ -515,8 +518,13 @@ div#footer {
 }
 
 div#footer li {
+	color: #fff;
 	display: inline;
 	margin: 0 1.3em;
+}
+
+div#footer a {
+	color: #fff;
 }
 
 #f-poweredbyico, #f-copyrightico {
