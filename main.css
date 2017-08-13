@@ -9,6 +9,9 @@
 ** All you guys rock :)
 */
 
+/*Myanmar Font Embedded*/
+@import url('https://mmwebfonts.comquas.com/fonts/?font=oursunicode');
+
 div#column-content {
 	width: 100%;
 	float: right;
@@ -48,8 +51,7 @@ div#column-one {
 
 body {
 	font: x-small sans-serif;
-	/* @embed */
-	//background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;
+	font-family:'Ours-Unicode';
 	background: #19a1a5;
 	color: black;
 	margin: 0;
