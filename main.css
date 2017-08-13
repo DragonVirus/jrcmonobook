@@ -20,7 +20,7 @@ div#column-content {
 }
 
 .mw-body {
-	margin: 2.8em 0 0 12.2em;
+	margin: 6em 0 0 12.2em;
 	padding: 1em;
 	position: relative;
 	z-index: 2;
@@ -393,8 +393,8 @@ li#pt-anonuserpage {
 */
 #p-cactions {
 	position: absolute;
-	top: 1.9em;
-    left: 12em;
+	top: 3.9em;
+    left: 11.2em;
 	margin: 0;
 	white-space: nowrap;
 	width: 76%;
@@ -415,7 +415,7 @@ li#pt-anonuserpage {
 	display: inline;
 	border: 1px solid #aaa;
 	border-bottom: none;
-	padding: 0 0 1em 0;
+	padding: 1em;
 	margin: 0 .3em 0 0;
 	overflow: visible;
 	background: white;
