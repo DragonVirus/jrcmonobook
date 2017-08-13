@@ -251,8 +251,14 @@ table.rimage {
 ** Search portlet
 */
 #p-search {
-	position: relative;
+	position: absolute;
 	z-index: 3;
+	top: 3.9em;
+	right: 0.8em;
+}
+
+#p-search h3 {
+	display:none;
 }
 
 input.searchButton {
@@ -267,7 +273,7 @@ input.searchButton {
 }
 
 #searchInput {
-	width: 10.9em;
+	width: 14em;
 	margin: 0;
 	font-size: 95%;
 }

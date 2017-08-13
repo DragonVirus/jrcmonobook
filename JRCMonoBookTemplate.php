@@ -254,10 +254,10 @@ class JRCMonoBookTemplate extends BaseTemplate {
 
 	function searchBox() {
 		?>
-		<div id="p-search" class="portlet" role="search">
+		<div id="p-search" role="search">
 			<h3><label for="searchInput"><?php $this->msg( 'search' ) ?></label></h3>
 
-			<div id="searchBody" class="pBody">
+			<div id="searchBody">
 				<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
 					<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 					<?php echo $this->makeSearchInput( array( "id" => "searchInput" ) ); ?>
