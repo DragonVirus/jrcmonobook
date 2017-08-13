@@ -42,7 +42,8 @@ class JRCMonoBookTemplate extends BaseTemplate {
 		wfSuppressWarnings();
 
 		$this->html( 'headelement' );
-		?><div id="globalWrapper">
+		?>
+		<div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
 				<a id="top"></a>
@@ -109,8 +110,8 @@ class JRCMonoBookTemplate extends BaseTemplate {
 					?>
 					<div class="visualClear"></div>
 				</div>
-			</div>
-		</div>
+			</div> <!-- end of BodyContent --> 
+		</div> <!-- end of #content --> 
 		<div id="column-one"<?php $this->html( 'userlangattributes' ) ?>>
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 			<?php $this->cactions(); ?>
@@ -144,8 +145,8 @@ class JRCMonoBookTemplate extends BaseTemplate {
 }
 						?>
 					</ul>
-				</div>
-			</div>
+				</div> <!-- end of .pBody -->
+			</div> <!-- end of #p-personal -->
 			<div class="portlet" id="p-logo" role="banner">
 				<?php
 				echo Html::element( 'a', array(
@@ -155,12 +156,16 @@ class JRCMonoBookTemplate extends BaseTemplate {
 						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
 				); ?>
 
-			</div>
+			</div> <!-- end of #p-logo -->
+			<!-- Sidebar -->
 			<?php
 			$this->renderPortals( $this->data['sidebar'] );
 			?>
 		</div><!-- end of the left (by default at least) column -->
+		<div class="footerpush"></div>
+		</div>
 		<div class="visualClear"></div>
+		<!-- Footer -->
 		<?php
 		$validFooterIcons = $this->getFooterIcons( "icononly" );
 		$validFooterLinks = $this->getFooterLinks( "flat" ); // Additional footer links
@@ -203,8 +208,6 @@ class JRCMonoBookTemplate extends BaseTemplate {
 
 		echo $footerEnd;
 		?>
-
-		</div>
 		<?php
 		$this->printTrail();
 		echo Html::closeElement( 'body' );
