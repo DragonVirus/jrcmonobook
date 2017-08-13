@@ -261,6 +261,14 @@ table.rimage {
 	display:none;
 }
 
+#mw-searchButton {
+	-webkit-appearance: button;
+    background: #116fc9;
+    color: #fff;
+    border: none;
+    padding: .5em 1em;
+}
+
 input.searchButton {
 	margin-top: 1px;
 	font-size: 95%;
@@ -270,12 +278,16 @@ input.searchButton {
 	padding-left: .5em;
 	padding-right: .5em;
 	font-weight: bold;
+	display:none;
 }
 
 #searchInput {
-	width: 14em;
+	width: 16em;
 	margin: 0;
 	font-size: 95%;
+	-webkit-appearance: textfield;
+	padding: .5em;
+	border: none;
 }
 
 #p-search .pBody {
