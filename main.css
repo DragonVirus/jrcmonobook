@@ -135,6 +135,10 @@ pre, .mw-code {
 	padding: 0;
 }
 
+#mw-content-text p {
+	line-height: 2em;
+}
+
 /*
 ** classes for special content elements like town boxes
 ** intended to be referenced directly from the wiki src
