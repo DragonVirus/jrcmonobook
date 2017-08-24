@@ -545,11 +545,18 @@ div#footer {
 	overflow: hidden;
 	padding: 1em 0 1em 0;
 	text-align: center;
-	
+	z-index: 9999;
+	position: relative;
 }
 
 div#footer, .footerpush {
 	height: 55px;
+	position:relative;
+}
+
+.footerpush {
+	z-index: 9000;
+	position:relative;
 }
 
 div#footer li {
